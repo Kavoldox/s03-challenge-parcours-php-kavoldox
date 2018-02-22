@@ -23,10 +23,13 @@ require_once '../inc/functions.php';
  *   fonction pour avoir d'autres numéros…
  */
 
+ // Correction : bien, il ne manque que le bonus
 function numerosLoto() {
+    // Correction : tout ceci manque de commentaire :/
     $randomNumber = mt_rand(1, 49);
     $randomNumber2 = mt_rand(1, 10);
     $i = 0;
+    // Correction : ici, l'idée était d'ajouter 5 chiffres aléatoires, pas 5 fois 1 chiffre aléatoire
     for ($i; $i <= 4; $i++) {
         $aleatoire[] = $randomNumber;
     }

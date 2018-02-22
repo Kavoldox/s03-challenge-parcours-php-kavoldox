@@ -30,6 +30,7 @@ require_once '../inc/functions.php';
  *      calculPlage(1, 2, 3) doit renvoyer 9
  */
 
+// Correction : bien
 function calculPlage($maillot, $lunettes, $creme) {
     return ($maillot + $lunettes + ($creme*2));
 }

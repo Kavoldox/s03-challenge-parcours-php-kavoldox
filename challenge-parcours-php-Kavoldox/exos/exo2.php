@@ -30,8 +30,10 @@ require_once '../inc/functions.php';
  * http://php.net/manual/fr/function.is-array.php
  */
 
+// Correction : bien
+// Correction : le contenu (le corps) de ta fonction, est correct. Mais il  manque la partie "optionnelle" aux 2e et 3e paramètres de ta fonction :)
 function calculPlage($maillot, $lunettes, $creme) {
-
+    // Correction : tout ceci manque de commentaire :/
     if (!is_array($maillot)) {
         return ($maillot + $lunettes + ($creme*2));
     } else {

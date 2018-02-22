@@ -24,10 +24,12 @@ require_once '../inc/functions.php';
  * Allez, bon courage… (mouhahaha)
  */
 
+// Correction : très bien
 function hello() {
 
     // recup et mis en array des deux dates
 
+    // Correction : mais que se passe-t-il si "birth" n'est pas défini dans l'URL ?
     $bDate = explode("-", $_GET['birth']);
     $cDate = explode("-", date('d-m-Y'));
 
@@ -41,6 +43,7 @@ function hello() {
     //echo $age;
     //echo 'Bonjour ' . $_GET['name'] . ' , comment tu vas ? Tu as ' . $age . ' ans mainteant !';
 
+    // Correction : mais que se passe-t-il s'il n'y a pas "?name=Zelda" dans l'URL ?
     return 'Bonjour ' . $_GET['name'] . ' , comment tu vas ? Tu as ' . $age . ' ans mainteant !';
 }
 
